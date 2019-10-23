@@ -1,0 +1,750 @@
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.10.1, py-1.5.3, pluggy-0.12.0
+rootdir: C:\Users\Saad Malik\Desktop\assignment8, inifile:
+plugins: arraydiff-0.2, doctestplus-0.1.3, openfiles-0.3.0, remotedata-0.2.1, timeout-1.3.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py FFFFFF                                                   [100%]
+
+================================== FAILURES ===================================
+____________________________ test_s_hashmap_add_1 _____________________________
+
+    def test_s_hashmap_add_1():
+        h = HashMap()
+    
+>       h.add(17, "seventeen")
+E       AttributeError: 'HashMap' object has no attribute 'add'
+
+test_student.py:12: AttributeError
+____________________________ test_s_hashmap_add_2 _____________________________
+
+    def test_s_hashmap_add_2():
+        h = HashMap()
+    
+>       h.add("blah", "blah text")
+E       AttributeError: 'HashMap' object has no attribute 'add'
+
+test_student.py:25: AttributeError
+____________________________ test_s_hashmap_add_3 _____________________________
+
+    def test_s_hashmap_add_3():
+        h = HashMap()
+    
+>       h.add((24, 2), "tuple text")
+E       AttributeError: 'HashMap' object has no attribute 'add'
+
+test_student.py:34: AttributeError
+____________________________ test_s_hashmap_del_1 _____________________________
+
+    def test_s_hashmap_del_1():
+        h = HashMap()
+    
+>       h.add(17, "seventeen")
+E       AttributeError: 'HashMap' object has no attribute 'add'
+
+test_student.py:46: AttributeError
+____________________________ test_s_hashmap_del_2 _____________________________
+
+    def test_s_hashmap_del_2():
+        h = HashMap()
+    
+>       h.add("blah", "seventeen")
+E       AttributeError: 'HashMap' object has no attribute 'add'
+
+test_student.py:61: AttributeError
+____________________________ test_s_hashmap_del_3 _____________________________
+
+    def test_s_hashmap_del_3():
+        h = HashMap()
+    
+>       h.add("blah", "seventeen")
+E       AttributeError: 'HashMap' object has no attribute 'add'
+
+test_student.py:76: AttributeError
+========================== 6 failed in 0.46 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.10.1, py-1.5.3, pluggy-0.12.0
+rootdir: C:\Users\Saad Malik\Desktop\assignment8, inifile:
+plugins: arraydiff-0.2, doctestplus-0.1.3, openfiles-0.3.0, remotedata-0.2.1, timeout-1.3.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py FFFFFF                                                   [100%]
+
+================================== FAILURES ===================================
+____________________________ test_s_hashmap_add_1 _____________________________
+
+    def test_s_hashmap_add_1():
+        h = HashMap()
+    
+>       h.add(17, "seventeen")
+
+test_student.py:12: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:13: in add
+    hashed_key = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x000001AA20EE3320>, key = 17
+
+    def _get_hash(self, key):
+    	#return key % self.size
+>   	str_len = len(key)
+E    TypeError: object of type 'int' has no len()
+
+a08.py:9: TypeError
+____________________________ test_s_hashmap_add_2 _____________________________
+
+    def test_s_hashmap_add_2():
+        h = HashMap()
+    
+        h.add("blah", "blah text")
+>       h.add(26, "twenty six")
+
+test_student.py:26: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:13: in add
+    hashed_key = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x000001AA20FA18D0>, key = 26
+
+    def _get_hash(self, key):
+    	#return key % self.size
+>   	str_len = len(key)
+E    TypeError: object of type 'int' has no len()
+
+a08.py:9: TypeError
+____________________________ test_s_hashmap_add_3 _____________________________
+
+    def test_s_hashmap_add_3():
+        h = HashMap()
+    
+        h.add((24, 2), "tuple text")
+>       h.add(26, "twenty six")
+
+test_student.py:35: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:13: in add
+    hashed_key = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x000001AA20F9C080>, key = 26
+
+    def _get_hash(self, key):
+    	#return key % self.size
+>   	str_len = len(key)
+E    TypeError: object of type 'int' has no len()
+
+a08.py:9: TypeError
+____________________________ test_s_hashmap_del_1 _____________________________
+
+    def test_s_hashmap_del_1():
+        h = HashMap()
+    
+>       h.add(17, "seventeen")
+
+test_student.py:46: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:13: in add
+    hashed_key = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x000001AA20ED6B70>, key = 17
+
+    def _get_hash(self, key):
+    	#return key % self.size
+>   	str_len = len(key)
+E    TypeError: object of type 'int' has no len()
+
+a08.py:9: TypeError
+____________________________ test_s_hashmap_del_2 _____________________________
+
+    def test_s_hashmap_del_2():
+        h = HashMap()
+    
+        h.add("blah", "seventeen")
+>       h.add(26, "twenty six")
+
+test_student.py:62: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:13: in add
+    hashed_key = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x000001AA20F94940>, key = 26
+
+    def _get_hash(self, key):
+    	#return key % self.size
+>   	str_len = len(key)
+E    TypeError: object of type 'int' has no len()
+
+a08.py:9: TypeError
+____________________________ test_s_hashmap_del_3 _____________________________
+
+    def test_s_hashmap_del_3():
+        h = HashMap()
+    
+        h.add("blah", "seventeen")
+>       h.add(26, "twenty six")
+
+test_student.py:77: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:13: in add
+    hashed_key = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x000001AA20FB9630>, key = 26
+
+    def _get_hash(self, key):
+    	#return key % self.size
+>   	str_len = len(key)
+E    TypeError: object of type 'int' has no len()
+
+a08.py:9: TypeError
+========================== 6 failed in 0.36 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.10.1, py-1.5.3, pluggy-0.12.0
+rootdir: C:\Users\Saad Malik\Desktop\assignment8, inifile:
+plugins: arraydiff-0.2, doctestplus-0.1.3, openfiles-0.3.0, remotedata-0.2.1, timeout-1.3.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py .FFFFF                                                   [100%]
+
+================================== FAILURES ===================================
+____________________________ test_s_hashmap_add_2 _____________________________
+
+    def test_s_hashmap_add_2():
+        h = HashMap()
+    
+>       h.add("blah", "blah text")
+
+test_student.py:25: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:13: in add
+    hashed_key = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x00000178406CA550>, key = 'blah'
+
+    def _get_hash(self, key):
+>   	return key % self.size
+E    TypeError: not all arguments converted during string formatting
+
+a08.py:8: TypeError
+____________________________ test_s_hashmap_add_3 _____________________________
+
+    def test_s_hashmap_add_3():
+        h = HashMap()
+    
+>       h.add((24, 2), "tuple text")
+
+test_student.py:34: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:13: in add
+    hashed_key = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x0000017840B619E8>, key = (24, 2)
+
+    def _get_hash(self, key):
+>   	return key % self.size
+E    TypeError: unsupported operand type(s) for %: 'tuple' and 'int'
+
+a08.py:8: TypeError
+____________________________ test_s_hashmap_del_1 _____________________________
+
+    def test_s_hashmap_del_1():
+        h = HashMap()
+    
+        h.add(17, "seventeen")
+        h.add(26, "twenty six")
+        h.add(35, "thirty five")
+        h.add(887, "large number")
+>       h.delete(17)
+E       AttributeError: 'HashMap' object has no attribute 'delete'
+
+test_student.py:50: AttributeError
+____________________________ test_s_hashmap_del_2 _____________________________
+
+    def test_s_hashmap_del_2():
+        h = HashMap()
+    
+>       h.add("blah", "seventeen")
+
+test_student.py:61: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:13: in add
+    hashed_key = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x0000017840A95160>, key = 'blah'
+
+    def _get_hash(self, key):
+>   	return key % self.size
+E    TypeError: not all arguments converted during string formatting
+
+a08.py:8: TypeError
+____________________________ test_s_hashmap_del_3 _____________________________
+
+    def test_s_hashmap_del_3():
+        h = HashMap()
+    
+>       h.add("blah", "seventeen")
+
+test_student.py:76: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:13: in add
+    hashed_key = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x0000017840B72588>, key = 'blah'
+
+    def _get_hash(self, key):
+>   	return key % self.size
+E    TypeError: not all arguments converted during string formatting
+
+a08.py:8: TypeError
+===================== 5 failed, 1 passed in 0.13 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.10.1, py-1.5.3, pluggy-0.12.0
+rootdir: C:\Users\Saad Malik\Desktop\assignment8, inifile:
+plugins: arraydiff-0.2, doctestplus-0.1.3, openfiles-0.3.0, remotedata-0.2.1, timeout-1.3.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py FFFFFF                                                   [100%]
+
+================================== FAILURES ===================================
+____________________________ test_s_hashmap_add_1 _____________________________
+
+    def test_s_hashmap_add_1():
+        h = HashMap()
+    
+>       h.add(17, "seventeen")
+
+test_student.py:12: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x000002AD9C8A3518>, key = 17, value = 'seventeen'
+
+    def add(self, key, value):
+    	hashed_key = self._get_hash(key)
+    	hashed_val = [key, value]
+>   	self.map[hashed_key] = [hashed_val]
+E    TypeError: list indices must be integers or slices, not NoneType
+
+a08.py:19: TypeError
+____________________________ test_s_hashmap_add_2 _____________________________
+
+    def test_s_hashmap_add_2():
+        h = HashMap()
+    
+>       h.add("blah", "blah text")
+
+test_student.py:25: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x000002AD9C9608D0>, key = 'blah'
+value = 'blah text'
+
+    def add(self, key, value):
+    	hashed_key = self._get_hash(key)
+    	hashed_val = [key, value]
+>   	self.map[hashed_key] = [hashed_val]
+E    TypeError: list indices must be integers or slices, not NoneType
+
+a08.py:19: TypeError
+____________________________ test_s_hashmap_add_3 _____________________________
+
+    def test_s_hashmap_add_3():
+        h = HashMap()
+    
+>       h.add((24, 2), "tuple text")
+
+test_student.py:34: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x000002AD9C8F9F60>, key = (24, 2)
+value = 'tuple text'
+
+    def add(self, key, value):
+    	hashed_key = self._get_hash(key)
+    	hashed_val = [key, value]
+>   	self.map[hashed_key] = [hashed_val]
+E    TypeError: list indices must be integers or slices, not NoneType
+
+a08.py:19: TypeError
+____________________________ test_s_hashmap_del_1 _____________________________
+
+    def test_s_hashmap_del_1():
+        h = HashMap()
+    
+>       h.add(17, "seventeen")
+
+test_student.py:46: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x000002AD9C953DA0>, key = 17, value = 'seventeen'
+
+    def add(self, key, value):
+    	hashed_key = self._get_hash(key)
+    	hashed_val = [key, value]
+>   	self.map[hashed_key] = [hashed_val]
+E    TypeError: list indices must be integers or slices, not NoneType
+
+a08.py:19: TypeError
+____________________________ test_s_hashmap_del_2 _____________________________
+
+    def test_s_hashmap_del_2():
+        h = HashMap()
+    
+>       h.add("blah", "seventeen")
+
+test_student.py:61: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x000002AD9C9754A8>, key = 'blah'
+value = 'seventeen'
+
+    def add(self, key, value):
+    	hashed_key = self._get_hash(key)
+    	hashed_val = [key, value]
+>   	self.map[hashed_key] = [hashed_val]
+E    TypeError: list indices must be integers or slices, not NoneType
+
+a08.py:19: TypeError
+____________________________ test_s_hashmap_del_3 _____________________________
+
+    def test_s_hashmap_del_3():
+        h = HashMap()
+    
+>       h.add("blah", "seventeen")
+
+test_student.py:76: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x000002AD9C9806A0>, key = 'blah'
+value = 'seventeen'
+
+    def add(self, key, value):
+    	hashed_key = self._get_hash(key)
+    	hashed_val = [key, value]
+>   	self.map[hashed_key] = [hashed_val]
+E    TypeError: list indices must be integers or slices, not NoneType
+
+a08.py:19: TypeError
+========================== 6 failed in 0.13 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.10.1, py-1.5.3, pluggy-0.12.0
+rootdir: C:\Users\Saad Malik\Desktop\assignment8, inifile:
+plugins: arraydiff-0.2, doctestplus-0.1.3, openfiles-0.3.0, remotedata-0.2.1, timeout-1.3.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py .FFFFF                                                   [100%]
+
+================================== FAILURES ===================================
+____________________________ test_s_hashmap_add_2 _____________________________
+
+    def test_s_hashmap_add_2():
+        h = HashMap()
+    
+>       h.add("blah", "blah text")
+
+test_student.py:25: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:16: in add
+    hashed_key = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x0000028383BC6588>, key = 'blah'
+
+    def _get_hash(self, key):
+>   		return key % self.size
+E     TypeError: not all arguments converted during string formatting
+
+a08.py:8: TypeError
+____________________________ test_s_hashmap_add_3 _____________________________
+
+    def test_s_hashmap_add_3():
+        h = HashMap()
+    
+>       h.add((24, 2), "tuple text")
+
+test_student.py:34: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:16: in add
+    hashed_key = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x0000028384062B70>, key = (24, 2)
+
+    def _get_hash(self, key):
+>   		return key % self.size
+E     TypeError: unsupported operand type(s) for %: 'tuple' and 'int'
+
+a08.py:8: TypeError
+____________________________ test_s_hashmap_del_1 _____________________________
+
+    def test_s_hashmap_del_1():
+        h = HashMap()
+    
+        h.add(17, "seventeen")
+        h.add(26, "twenty six")
+        h.add(35, "thirty five")
+        h.add(887, "large number")
+>       h.delete(17)
+E       AttributeError: 'HashMap' object has no attribute 'delete'
+
+test_student.py:50: AttributeError
+____________________________ test_s_hashmap_del_2 _____________________________
+
+    def test_s_hashmap_del_2():
+        h = HashMap()
+    
+>       h.add("blah", "seventeen")
+
+test_student.py:61: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:16: in add
+    hashed_key = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x0000028383FF9F98>, key = 'blah'
+
+    def _get_hash(self, key):
+>   		return key % self.size
+E     TypeError: not all arguments converted during string formatting
+
+a08.py:8: TypeError
+____________________________ test_s_hashmap_del_3 _____________________________
+
+    def test_s_hashmap_del_3():
+        h = HashMap()
+    
+>       h.add("blah", "seventeen")
+
+test_student.py:76: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:16: in add
+    hashed_key = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x00000283840725F8>, key = 'blah'
+
+    def _get_hash(self, key):
+>   		return key % self.size
+E     TypeError: not all arguments converted during string formatting
+
+a08.py:8: TypeError
+===================== 5 failed, 1 passed in 0.24 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.10.1, py-1.5.3, pluggy-0.12.0
+rootdir: C:\Users\Saad Malik\Desktop\assignment8, inifile:
+plugins: arraydiff-0.2, doctestplus-0.1.3, openfiles-0.3.0, remotedata-0.2.1, timeout-1.3.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py .FFFFF                                                   [100%]
+
+================================== FAILURES ===================================
+____________________________ test_s_hashmap_add_2 _____________________________
+
+    def test_s_hashmap_add_2():
+        h = HashMap()
+    
+>       h.add("blah", "blah text")
+
+test_student.py:25: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:16: in add
+    hashed_key = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x000002693E3EA588>, key = 'blah'
+
+    def _get_hash(self, key):
+>   		return key % self.size
+E     TypeError: not all arguments converted during string formatting
+
+a08.py:8: TypeError
+____________________________ test_s_hashmap_add_3 _____________________________
+
+    def test_s_hashmap_add_3():
+        h = HashMap()
+    
+>       h.add((24, 2), "tuple text")
+
+test_student.py:34: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:16: in add
+    hashed_key = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x000002693E882B70>, key = (24, 2)
+
+    def _get_hash(self, key):
+>   		return key % self.size
+E     TypeError: unsupported operand type(s) for %: 'tuple' and 'int'
+
+a08.py:8: TypeError
+____________________________ test_s_hashmap_del_1 _____________________________
+
+    def test_s_hashmap_del_1():
+        h = HashMap()
+    
+        h.add(17, "seventeen")
+        h.add(26, "twenty six")
+        h.add(35, "thirty five")
+        h.add(887, "large number")
+>       h.delete(17)
+E       AttributeError: 'HashMap' object has no attribute 'delete'
+
+test_student.py:50: AttributeError
+____________________________ test_s_hashmap_del_2 _____________________________
+
+    def test_s_hashmap_del_2():
+        h = HashMap()
+    
+>       h.add("blah", "seventeen")
+
+test_student.py:61: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:16: in add
+    hashed_key = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x000002693E876240>, key = 'blah'
+
+    def _get_hash(self, key):
+>   		return key % self.size
+E     TypeError: not all arguments converted during string formatting
+
+a08.py:8: TypeError
+____________________________ test_s_hashmap_del_3 _____________________________
+
+    def test_s_hashmap_del_3():
+        h = HashMap()
+    
+>       h.add("blah", "seventeen")
+
+test_student.py:76: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+a08.py:16: in add
+    hashed_key = self._get_hash(key)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a08.HashMap object at 0x000002693E819FD0>, key = 'blah'
+
+    def _get_hash(self, key):
+>   		return key % self.size
+E     TypeError: not all arguments converted during string formatting
+
+a08.py:8: TypeError
+===================== 5 failed, 1 passed in 0.11 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.10.1, py-1.5.3, pluggy-0.12.0
+rootdir: C:\Users\Saad Malik\Desktop\assignment8, inifile:
+plugins: arraydiff-0.2, doctestplus-0.1.3, openfiles-0.3.0, remotedata-0.2.1, timeout-1.3.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ...FFF                                                   [100%]
+
+================================== FAILURES ===================================
+____________________________ test_s_hashmap_del_1 _____________________________
+
+    def test_s_hashmap_del_1():
+        h = HashMap()
+    
+        h.add(17, "seventeen")
+        h.add(26, "twenty six")
+        h.add(35, "thirty five")
+        h.add(887, "large number")
+>       h.delete(17)
+E       AttributeError: 'HashMap' object has no attribute 'delete'
+
+test_student.py:50: AttributeError
+---------------------------- Captured stdout call -----------------------------
+[SUCCESS] Added  17  at hash :  7
+[SUCCESS] Added  26  at hash :  6
+[SUCCESS] Added  35  at hash :  5
+[SUCCESS] Appended  887  at hash :  7
+____________________________ test_s_hashmap_del_2 _____________________________
+
+    def test_s_hashmap_del_2():
+        h = HashMap()
+    
+        h.add("blah", "seventeen")
+        h.add(26, "twenty six")
+        h.add(35, "thirty five")
+        h.add(887, "large number")
+>       h.delete("blah")
+E       AttributeError: 'HashMap' object has no attribute 'delete'
+
+test_student.py:65: AttributeError
+---------------------------- Captured stdout call -----------------------------
+[SUCCESS] Added  blah  at hash :  4
+[SUCCESS] Added  26  at hash :  6
+[SUCCESS] Added  35  at hash :  5
+[SUCCESS] Added  887  at hash :  7
+____________________________ test_s_hashmap_del_3 _____________________________
+
+    def test_s_hashmap_del_3():
+        h = HashMap()
+    
+        h.add("blah", "seventeen")
+        h.add(26, "twenty six")
+        h.add(35, "thirty five")
+        h.add(887, "large number")
+>       h.delete("blah")
+E       AttributeError: 'HashMap' object has no attribute 'delete'
+
+test_student.py:80: AttributeError
+---------------------------- Captured stdout call -----------------------------
+[SUCCESS] Added  blah  at hash :  4
+[SUCCESS] Added  26  at hash :  6
+[SUCCESS] Added  35  at hash :  5
+[SUCCESS] Added  887  at hash :  7
+===================== 3 failed, 3 passed in 0.09 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.10.1, py-1.5.3, pluggy-0.12.0
+rootdir: C:\Users\Saad Malik\Desktop\assignment8, inifile:
+plugins: arraydiff-0.2, doctestplus-0.1.3, openfiles-0.3.0, remotedata-0.2.1, timeout-1.3.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ......                                                   [100%]
+
+========================== 6 passed in 0.04 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.10.1, py-1.5.3, pluggy-0.12.0
+rootdir: C:\Users\Saad Malik\Desktop\assignment8, inifile:
+plugins: arraydiff-0.2, doctestplus-0.1.3, openfiles-0.3.0, remotedata-0.2.1, timeout-1.3.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 6 items
+
+test_student.py ......                                                   [100%]
+
+========================== 6 passed in 0.04 seconds ===========================
