@@ -1,0 +1,11 @@
+{
+    "assignment": 7,
+    "modifiable_files": [
+        "a07.py"
+    ],
+    "student_tests": [
+        "test_student.py"
+    ],
+    "timeout": 3,
+    "total_points": 25
+}

@@ -1,0 +1,1161 @@
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-5.1.1, py-1.5.3, pluggy-0.12.0
+rootdir: C:\Users\Saad Malik\Desktop\ass2
+plugins: arraydiff-0.2, doctestplus-0.1.3, openfiles-0.3.0, remotedata-0.2.1, timeout-1.3.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py EEEEEEE                                                  [100%]
+
+=================================== ERRORS ====================================
+_____________________ ERROR at setup of test_s_address_1 ______________________
+
+item = <Function test_s_address_1>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_address_2 ______________________
+
+item = <Function test_s_address_2>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_address_3 ______________________
+
+item = <Function test_s_address_3>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_employee_1 _____________________
+
+item = <Function test_s_employee_1>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_employee_2 _____________________
+
+item = <Function test_s_employee_2>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_employee_3 _____________________
+
+item = <Function test_s_employee_3>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_lecturer_1 _____________________
+
+item = <Function test_s_lecturer_1>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+============================== 7 error in 0.82s ===============================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-5.1.1, py-1.5.3, pluggy-0.12.0
+rootdir: C:\Users\Saad Malik\Desktop\ass2
+plugins: arraydiff-0.2, doctestplus-0.1.3, openfiles-0.3.0, remotedata-0.2.1, timeout-1.3.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py EEEEEEE                                                  [100%]
+
+=================================== ERRORS ====================================
+_____________________ ERROR at setup of test_s_address_1 ______________________
+
+item = <Function test_s_address_1>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_address_2 ______________________
+
+item = <Function test_s_address_2>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_address_3 ______________________
+
+item = <Function test_s_address_3>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_employee_1 _____________________
+
+item = <Function test_s_employee_1>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_employee_2 _____________________
+
+item = <Function test_s_employee_2>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_employee_3 _____________________
+
+item = <Function test_s_employee_3>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_lecturer_1 _____________________
+
+item = <Function test_s_lecturer_1>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+============================== 7 error in 0.37s ===============================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-5.1.1, py-1.5.3, pluggy-0.12.0
+rootdir: C:\Users\Saad Malik\Desktop\ass2
+plugins: arraydiff-0.2, doctestplus-0.1.3, openfiles-0.3.0, remotedata-0.2.1, timeout-1.3.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py EEEEEEE                                                  [100%]
+
+=================================== ERRORS ====================================
+_____________________ ERROR at setup of test_s_address_1 ______________________
+
+item = <Function test_s_address_1>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_address_2 ______________________
+
+item = <Function test_s_address_2>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_address_3 ______________________
+
+item = <Function test_s_address_3>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_employee_1 _____________________
+
+item = <Function test_s_employee_1>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_employee_2 _____________________
+
+item = <Function test_s_employee_2>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_employee_3 _____________________
+
+item = <Function test_s_employee_3>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_lecturer_1 _____________________
+
+item = <Function test_s_lecturer_1>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+============================== 7 error in 0.39s ===============================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-5.1.1, py-1.5.3, pluggy-0.12.0
+rootdir: C:\Users\Saad Malik\Desktop\ass2
+plugins: arraydiff-0.2, doctestplus-0.1.3, openfiles-0.3.0, remotedata-0.2.1, timeout-1.3.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py EEEEEEE                                                  [100%]
+
+=================================== ERRORS ====================================
+_____________________ ERROR at setup of test_s_address_1 ______________________
+
+item = <Function test_s_address_1>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_address_2 ______________________
+
+item = <Function test_s_address_2>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_address_3 ______________________
+
+item = <Function test_s_address_3>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_employee_1 _____________________
+
+item = <Function test_s_employee_1>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_employee_2 _____________________
+
+item = <Function test_s_employee_2>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_employee_3 _____________________
+
+item = <Function test_s_employee_3>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_lecturer_1 _____________________
+
+item = <Function test_s_lecturer_1>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+============================== 7 error in 0.13s ===============================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-5.1.1, py-1.5.3, pluggy-0.12.0
+rootdir: C:\Users\Saad Malik\Desktop\ass2
+plugins: arraydiff-0.2, doctestplus-0.1.3, openfiles-0.3.0, remotedata-0.2.1, timeout-1.3.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py EEEEEEE                                                  [100%]
+
+=================================== ERRORS ====================================
+_____________________ ERROR at setup of test_s_address_1 ______________________
+
+item = <Function test_s_address_1>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_address_2 ______________________
+
+item = <Function test_s_address_2>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_address_3 ______________________
+
+item = <Function test_s_address_3>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_employee_1 _____________________
+
+item = <Function test_s_employee_1>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_employee_2 _____________________
+
+item = <Function test_s_employee_2>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_employee_3 _____________________
+
+item = <Function test_s_employee_3>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_lecturer_1 _____________________
+
+item = <Function test_s_lecturer_1>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+============================== 7 error in 0.19s ===============================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-5.1.1, py-1.5.3, pluggy-0.12.0
+rootdir: C:\Users\Saad Malik\Desktop\ass2
+plugins: arraydiff-0.2, doctestplus-0.1.3, openfiles-0.3.0, remotedata-0.2.1, timeout-1.3.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py EEEEEEE                                                  [100%]
+
+=================================== ERRORS ====================================
+_____________________ ERROR at setup of test_s_address_1 ______________________
+
+item = <Function test_s_address_1>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_address_2 ______________________
+
+item = <Function test_s_address_2>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_address_3 ______________________
+
+item = <Function test_s_address_3>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_employee_1 _____________________
+
+item = <Function test_s_employee_1>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_employee_2 _____________________
+
+item = <Function test_s_employee_2>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_employee_3 _____________________
+
+item = <Function test_s_employee_3>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_lecturer_1 _____________________
+
+item = <Function test_s_lecturer_1>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+============================== 7 error in 0.12s ===============================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-5.1.1, py-1.5.3, pluggy-0.12.0
+rootdir: C:\Users\Saad Malik\Desktop\ass2
+plugins: arraydiff-0.2, doctestplus-0.1.3, openfiles-0.3.0, remotedata-0.2.1, timeout-1.3.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py EEEEEEE                                                  [100%]
+
+=================================== ERRORS ====================================
+_____________________ ERROR at setup of test_s_address_1 ______________________
+
+item = <Function test_s_address_1>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_address_2 ______________________
+
+item = <Function test_s_address_2>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_address_3 ______________________
+
+item = <Function test_s_address_3>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_employee_1 _____________________
+
+item = <Function test_s_employee_1>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_employee_2 _____________________
+
+item = <Function test_s_employee_2>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_employee_3 _____________________
+
+item = <Function test_s_employee_3>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_lecturer_1 _____________________
+
+item = <Function test_s_lecturer_1>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+============================== 7 error in 0.21s ===============================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-5.1.1, py-1.5.3, pluggy-0.12.0
+rootdir: C:\Users\Saad Malik\Desktop\ass2
+plugins: arraydiff-0.2, doctestplus-0.1.3, openfiles-0.3.0, remotedata-0.2.1, timeout-1.3.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py EEEEEEE                                                  [100%]
+
+=================================== ERRORS ====================================
+_____________________ ERROR at setup of test_s_address_1 ______________________
+
+item = <Function test_s_address_1>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_address_2 ______________________
+
+item = <Function test_s_address_2>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_address_3 ______________________
+
+item = <Function test_s_address_3>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_employee_1 _____________________
+
+item = <Function test_s_employee_1>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_employee_2 _____________________
+
+item = <Function test_s_employee_2>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_employee_3 _____________________
+
+item = <Function test_s_employee_3>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_lecturer_1 _____________________
+
+item = <Function test_s_lecturer_1>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+============================== 7 error in 0.26s ===============================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-5.1.1, py-1.5.3, pluggy-0.12.0
+rootdir: C:\Users\Saad Malik\Desktop\ass2
+plugins: arraydiff-0.2, doctestplus-0.1.3, openfiles-0.3.0, remotedata-0.2.1, timeout-1.3.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py EEEEEEE                                                  [100%]
+
+=================================== ERRORS ====================================
+_____________________ ERROR at setup of test_s_address_1 ______________________
+
+item = <Function test_s_address_1>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_address_2 ______________________
+
+item = <Function test_s_address_2>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_address_3 ______________________
+
+item = <Function test_s_address_3>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_employee_1 _____________________
+
+item = <Function test_s_employee_1>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_employee_2 _____________________
+
+item = <Function test_s_employee_2>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_employee_3 _____________________
+
+item = <Function test_s_employee_3>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_lecturer_1 _____________________
+
+item = <Function test_s_lecturer_1>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+============================== 7 error in 0.17s ===============================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-5.1.1, py-1.5.3, pluggy-0.12.0
+rootdir: C:\Users\Saad Malik\Desktop\ass2
+plugins: arraydiff-0.2, doctestplus-0.1.3, openfiles-0.3.0, remotedata-0.2.1, timeout-1.3.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py EEEEEEE                                                  [100%]
+
+=================================== ERRORS ====================================
+_____________________ ERROR at setup of test_s_address_1 ______________________
+
+item = <Function test_s_address_1>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_address_2 ______________________
+
+item = <Function test_s_address_2>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_address_3 ______________________
+
+item = <Function test_s_address_3>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_employee_1 _____________________
+
+item = <Function test_s_employee_1>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_employee_2 _____________________
+
+item = <Function test_s_employee_2>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_employee_3 _____________________
+
+item = <Function test_s_employee_3>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_lecturer_1 _____________________
+
+item = <Function test_s_lecturer_1>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+============================== 7 error in 0.12s ===============================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-5.1.1, py-1.5.3, pluggy-0.12.0
+rootdir: C:\Users\Saad Malik\Desktop\ass2
+plugins: arraydiff-0.2, doctestplus-0.1.3, openfiles-0.3.0, remotedata-0.2.1, timeout-1.3.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py EEEEEEE                                                  [100%]
+
+=================================== ERRORS ====================================
+_____________________ ERROR at setup of test_s_address_1 ______________________
+
+item = <Function test_s_address_1>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_address_2 ______________________
+
+item = <Function test_s_address_2>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_address_3 ______________________
+
+item = <Function test_s_address_3>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_employee_1 _____________________
+
+item = <Function test_s_employee_1>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_employee_2 _____________________
+
+item = <Function test_s_employee_2>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_employee_3 _____________________
+
+item = <Function test_s_employee_3>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+_____________________ ERROR at setup of test_s_lecturer_1 _____________________
+
+item = <Function test_s_lecturer_1>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+============================== 7 error in 0.11s ===============================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.10.1, py-1.5.3, pluggy-0.12.0
+rootdir: C:\Users\Saad Malik\Desktop\ass2, inifile:
+plugins: arraydiff-0.2, doctestplus-0.1.3, openfiles-0.3.0, remotedata-0.2.1, timeout-1.3.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py FFFFFFF                                                  [100%]
+
+================================== FAILURES ===================================
+______________________________ test_s_address_1 _______________________________
+
+    def test_s_address_1():
+>       a = Address()
+E       NameError: name 'Address' is not defined
+
+test_student.py:17: NameError
+______________________________ test_s_address_2 _______________________________
+
+    def test_s_address_2():
+>       a = Address(2, 3, "Peshawar", "Pakistan")
+E       NameError: name 'Address' is not defined
+
+test_student.py:26: NameError
+______________________________ test_s_address_3 _______________________________
+
+    def test_s_address_3():
+>       a = Address(21, 3, "Peshawar", "Pakistan")
+E       NameError: name 'Address' is not defined
+
+test_student.py:30: NameError
+______________________________ test_s_employee_1 ______________________________
+
+    def test_s_employee_1():
+>       e = Employee()
+E       NameError: name 'Employee' is not defined
+
+test_student.py:35: NameError
+______________________________ test_s_employee_2 ______________________________
+
+    def test_s_employee_2():
+>       e = Employee()
+E       NameError: name 'Employee' is not defined
+
+test_student.py:41: NameError
+______________________________ test_s_employee_3 ______________________________
+
+    def test_s_employee_3():
+>       e = Employee(11, "Ali")
+E       NameError: name 'Employee' is not defined
+
+test_student.py:52: NameError
+______________________________ test_s_lecturer_1 ______________________________
+
+    def test_s_lecturer_1():
+>       l = Lecturer()
+E       NameError: name 'Lecturer' is not defined
+
+test_student.py:58: NameError
+========================== 7 failed in 1.05 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.10.1, py-1.5.3, pluggy-0.12.0
+rootdir: C:\Users\Saad Malik\Desktop\ass2, inifile:
+plugins: arraydiff-0.2, doctestplus-0.1.3, openfiles-0.3.0, remotedata-0.2.1, timeout-1.3.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py FFFFFFF                                                  [100%]
+
+================================== FAILURES ===================================
+______________________________ test_s_address_1 _______________________________
+
+    def test_s_address_1():
+>       a = Address()
+E       NameError: name 'Address' is not defined
+
+test_student.py:17: NameError
+______________________________ test_s_address_2 _______________________________
+
+    def test_s_address_2():
+>       a = Address(2, 3, "Peshawar", "Pakistan")
+E       NameError: name 'Address' is not defined
+
+test_student.py:26: NameError
+______________________________ test_s_address_3 _______________________________
+
+    def test_s_address_3():
+>       a = Address(21, 3, "Peshawar", "Pakistan")
+E       NameError: name 'Address' is not defined
+
+test_student.py:30: NameError
+______________________________ test_s_employee_1 ______________________________
+
+    def test_s_employee_1():
+>       e = Employee()
+E       NameError: name 'Employee' is not defined
+
+test_student.py:35: NameError
+______________________________ test_s_employee_2 ______________________________
+
+    def test_s_employee_2():
+>       e = Employee()
+E       NameError: name 'Employee' is not defined
+
+test_student.py:41: NameError
+______________________________ test_s_employee_3 ______________________________
+
+    def test_s_employee_3():
+>       e = Employee(11, "Ali")
+E       NameError: name 'Employee' is not defined
+
+test_student.py:52: NameError
+______________________________ test_s_lecturer_1 ______________________________
+
+    def test_s_lecturer_1():
+>       l = Lecturer()
+E       NameError: name 'Lecturer' is not defined
+
+test_student.py:58: NameError
+========================== 7 failed in 0.14 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.10.1, py-1.5.3, pluggy-0.12.0
+rootdir: C:\Users\Saad Malik\Desktop\ass2, inifile:
+plugins: arraydiff-0.2, doctestplus-0.1.3, openfiles-0.3.0, remotedata-0.2.1, timeout-1.3.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py FFFFFFF                                                  [100%]
+
+================================== FAILURES ===================================
+______________________________ test_s_address_1 _______________________________
+
+    def test_s_address_1():
+>       a = Address()
+E       NameError: name 'Address' is not defined
+
+test_student.py:17: NameError
+______________________________ test_s_address_2 _______________________________
+
+    def test_s_address_2():
+>       a = Address(2, 3, "Peshawar", "Pakistan")
+E       NameError: name 'Address' is not defined
+
+test_student.py:26: NameError
+______________________________ test_s_address_3 _______________________________
+
+    def test_s_address_3():
+>       a = Address(21, 3, "Peshawar", "Pakistan")
+E       NameError: name 'Address' is not defined
+
+test_student.py:30: NameError
+______________________________ test_s_employee_1 ______________________________
+
+    def test_s_employee_1():
+>       e = Employee()
+E       NameError: name 'Employee' is not defined
+
+test_student.py:35: NameError
+______________________________ test_s_employee_2 ______________________________
+
+    def test_s_employee_2():
+>       e = Employee()
+E       NameError: name 'Employee' is not defined
+
+test_student.py:41: NameError
+______________________________ test_s_employee_3 ______________________________
+
+    def test_s_employee_3():
+>       e = Employee(11, "Ali")
+E       NameError: name 'Employee' is not defined
+
+test_student.py:52: NameError
+______________________________ test_s_lecturer_1 ______________________________
+
+    def test_s_lecturer_1():
+>       l = Lecturer()
+E       NameError: name 'Lecturer' is not defined
+
+test_student.py:58: NameError
+========================== 7 failed in 0.11 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.10.1, py-1.5.3, pluggy-0.12.0
+rootdir: C:\Users\Saad Malik\Desktop\ass2, inifile:
+plugins: arraydiff-0.2, doctestplus-0.1.3, openfiles-0.3.0, remotedata-0.2.1, timeout-1.3.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 7 items
+
+test_student.py FFFFFFF                                                  [100%]
+
+================================== FAILURES ===================================
+______________________________ test_s_address_1 _______________________________
+
+    def test_s_address_1():
+>       a = Address()
+E       NameError: name 'Address' is not defined
+
+test_student.py:17: NameError
+______________________________ test_s_address_2 _______________________________
+
+    def test_s_address_2():
+>       a = Address(2, 3, "Peshawar", "Pakistan")
+E       NameError: name 'Address' is not defined
+
+test_student.py:26: NameError
+______________________________ test_s_address_3 _______________________________
+
+    def test_s_address_3():
+>       a = Address(21, 3, "Peshawar", "Pakistan")
+E       NameError: name 'Address' is not defined
+
+test_student.py:30: NameError
+______________________________ test_s_employee_1 ______________________________
+
+    def test_s_employee_1():
+>       e = Employee()
+E       NameError: name 'Employee' is not defined
+
+test_student.py:35: NameError
+______________________________ test_s_employee_2 ______________________________
+
+    def test_s_employee_2():
+>       e = Employee()
+E       NameError: name 'Employee' is not defined
+
+test_student.py:41: NameError
+______________________________ test_s_employee_3 ______________________________
+
+    def test_s_employee_3():
+>       e = Employee(11, "Ali")
+E       NameError: name 'Employee' is not defined
+
+test_student.py:52: NameError
+______________________________ test_s_lecturer_1 ______________________________
+
+    def test_s_lecturer_1():
+>       l = Lecturer()
+E       NameError: name 'Lecturer' is not defined
+
+test_student.py:58: NameError
+========================== 7 failed in 0.10 seconds ===========================

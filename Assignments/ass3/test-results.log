@@ -1,0 +1,1640 @@
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.10.1, py-1.5.3, pluggy-0.12.0
+rootdir: C:\Users\Saad Malik\Desktop\ass3, inifile:
+plugins: arraydiff-0.2, doctestplus-0.1.3, openfiles-0.3.0, remotedata-0.2.1, timeout-1.3.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 8 items
+
+test_student.py FFFFFFFF                                                 [100%]
+
+================================== FAILURES ===================================
+________________________________ test_s_len_1 _________________________________
+
+    def test_s_len_1():
+        l = LinkedList()
+        l.push(5)
+        l.push(6)
+    
+>       assert l.len() == 2
+E       AttributeError: 'LinkedList' object has no attribute 'len'
+
+test_student.py:9: AttributeError
+________________________________ test_s_len_2 _________________________________
+
+    def test_s_len_2():
+        l = LinkedList()
+>       assert l.len() == 0
+E       AttributeError: 'LinkedList' object has no attribute 'len'
+
+test_student.py:13: AttributeError
+________________________________ test_s_len_3 _________________________________
+
+    def test_s_len_3():
+        l = LinkedList()
+        l.push(5)
+        l.push(2)
+        l.pop()
+    
+>       assert l.len() == 1
+E       AttributeError: 'LinkedList' object has no attribute 'len'
+
+test_student.py:21: AttributeError
+_______________________________ test_s_remove_1 _______________________________
+
+    def test_s_remove_1():
+        l = LinkedList()
+        l.push(5)
+        l.push(6)
+    
+>       l.remove(5)
+E       AttributeError: 'LinkedList' object has no attribute 'remove'
+
+test_student.py:28: AttributeError
+_______________________________ test_s_remove_2 _______________________________
+
+    def test_s_remove_2():
+        l = LinkedList()
+        l.push(5)
+        l.push(6)
+    
+>       l.remove(19)
+E       AttributeError: 'LinkedList' object has no attribute 'remove'
+
+test_student.py:49: AttributeError
+________________________________ test_s_get_1 _________________________________
+
+    def test_s_get_1():
+        l = LinkedList()
+        l.push(10)
+        l.push(11)
+>       l.push(12)
+
+test_student.py:58: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a03.LinkedList object at 0x000001D0BB0284A8>, val = 12
+
+    def push(self , val):
+        new_node = Node(val)
+    
+        if self.head == None:
+            self.head = new_node
+            return
+    
+        last = self.head
+        while last.next is not None:
+>           temp = temp.next
+E           UnboundLocalError: local variable 'temp' referenced before assignment
+
+a03.py:19: UnboundLocalError
+________________________________ test_s_get_2 _________________________________
+
+    def test_s_get_2():
+        l = LinkedList()
+        l.push(10)
+        l.push(11)
+>       l.push(12)
+
+test_student.py:66: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a03.LinkedList object at 0x000001D0BB0AA198>, val = 12
+
+    def push(self , val):
+        new_node = Node(val)
+    
+        if self.head == None:
+            self.head = new_node
+            return
+    
+        last = self.head
+        while last.next is not None:
+>           temp = temp.next
+E           UnboundLocalError: local variable 'temp' referenced before assignment
+
+a03.py:19: UnboundLocalError
+________________________________ test_s_get_3 _________________________________
+
+    def test_s_get_3():
+        l = LinkedList()
+        l.push(10)
+        l.push(11)
+>       l.push(12)
+
+test_student.py:74: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a03.LinkedList object at 0x000001D0BAFD3320>, val = 12
+
+    def push(self , val):
+        new_node = Node(val)
+    
+        if self.head == None:
+            self.head = new_node
+            return
+    
+        last = self.head
+        while last.next is not None:
+>           temp = temp.next
+E           UnboundLocalError: local variable 'temp' referenced before assignment
+
+a03.py:19: UnboundLocalError
+========================== 8 failed in 0.58 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.10.1, py-1.5.3, pluggy-0.12.0
+rootdir: C:\Users\Saad Malik\Desktop\ass3, inifile:
+plugins: arraydiff-0.2, doctestplus-0.1.3, openfiles-0.3.0, remotedata-0.2.1, timeout-1.3.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 8 items
+
+test_student.py FFFFFFFF                                                 [100%]
+
+================================== FAILURES ===================================
+________________________________ test_s_len_1 _________________________________
+
+    def test_s_len_1():
+        l = LinkedList()
+        l.push(5)
+        l.push(6)
+    
+>       assert l.len() == 2
+E       assert 1 == 2
+E        +  where 1 = <bound method LinkedList.len of <a03.LinkedList object at 0x00000155123C4208>>()
+E        +    where <bound method LinkedList.len of <a03.LinkedList object at 0x00000155123C4208>> = <a03.LinkedList object at 0x00000155123C4208>.len
+
+test_student.py:9: AssertionError
+---------------------------- Captured stdout call -----------------------------
+Computing Length ....
+Length :  1
+________________________________ test_s_len_2 _________________________________
+
+    def test_s_len_2():
+        l = LinkedList()
+>       assert l.len() == 0
+
+test_student.py:13: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a03.LinkedList object at 0x0000015512426240>
+
+    def len(self):
+        print("Computing Length ....")
+        counter = 0
+        temp = self.head
+>       while temp.next is not None:
+E       AttributeError: 'NoneType' object has no attribute 'next'
+
+a03.py:61: AttributeError
+---------------------------- Captured stdout call -----------------------------
+Computing Length ....
+________________________________ test_s_len_3 _________________________________
+
+    def test_s_len_3():
+        l = LinkedList()
+        l.push(5)
+        l.push(2)
+        l.pop()
+    
+>       assert l.len() == 1
+E       assert 0 == 1
+E        +  where 0 = <bound method LinkedList.len of <a03.LinkedList object at 0x00000155123B63C8>>()
+E        +    where <bound method LinkedList.len of <a03.LinkedList object at 0x00000155123B63C8>> = <a03.LinkedList object at 0x00000155123B63C8>.len
+
+test_student.py:21: AssertionError
+---------------------------- Captured stdout call -----------------------------
+Computing Length ....
+Length :  0
+_______________________________ test_s_remove_1 _______________________________
+
+    def test_s_remove_1():
+        l = LinkedList()
+        l.push(5)
+        l.push(6)
+    
+>       l.remove(5)
+E       AttributeError: 'LinkedList' object has no attribute 'remove'
+
+test_student.py:28: AttributeError
+_______________________________ test_s_remove_2 _______________________________
+
+    def test_s_remove_2():
+        l = LinkedList()
+        l.push(5)
+        l.push(6)
+    
+>       l.remove(19)
+E       AttributeError: 'LinkedList' object has no attribute 'remove'
+
+test_student.py:49: AttributeError
+________________________________ test_s_get_1 _________________________________
+
+    def test_s_get_1():
+        l = LinkedList()
+        l.push(10)
+        l.push(11)
+>       l.push(12)
+
+test_student.py:58: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a03.LinkedList object at 0x00000155124269E8>, val = 12
+
+    def push(self , val):
+        new_node = Node(val)
+    
+        if self.head == None:
+            self.head = new_node
+            return
+    
+        last = self.head
+        while last.next is not None:
+>           temp = temp.next
+E           UnboundLocalError: local variable 'temp' referenced before assignment
+
+a03.py:24: UnboundLocalError
+________________________________ test_s_get_2 _________________________________
+
+    def test_s_get_2():
+        l = LinkedList()
+        l.push(10)
+        l.push(11)
+>       l.push(12)
+
+test_student.py:66: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a03.LinkedList object at 0x0000015512496518>, val = 12
+
+    def push(self , val):
+        new_node = Node(val)
+    
+        if self.head == None:
+            self.head = new_node
+            return
+    
+        last = self.head
+        while last.next is not None:
+>           temp = temp.next
+E           UnboundLocalError: local variable 'temp' referenced before assignment
+
+a03.py:24: UnboundLocalError
+________________________________ test_s_get_3 _________________________________
+
+    def test_s_get_3():
+        l = LinkedList()
+        l.push(10)
+        l.push(11)
+>       l.push(12)
+
+test_student.py:74: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a03.LinkedList object at 0x00000155124A73C8>, val = 12
+
+    def push(self , val):
+        new_node = Node(val)
+    
+        if self.head == None:
+            self.head = new_node
+            return
+    
+        last = self.head
+        while last.next is not None:
+>           temp = temp.next
+E           UnboundLocalError: local variable 'temp' referenced before assignment
+
+a03.py:24: UnboundLocalError
+========================== 8 failed in 0.22 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.10.1, py-1.5.3, pluggy-0.12.0
+rootdir: C:\Users\Saad Malik\Desktop\ass3, inifile:
+plugins: arraydiff-0.2, doctestplus-0.1.3, openfiles-0.3.0, remotedata-0.2.1, timeout-1.3.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 8 items
+
+test_student.py ...FFFFF                                                 [100%]
+
+================================== FAILURES ===================================
+_______________________________ test_s_remove_1 _______________________________
+
+    def test_s_remove_1():
+        l = LinkedList()
+        l.push(5)
+        l.push(6)
+    
+>       l.remove(5)
+E       AttributeError: 'LinkedList' object has no attribute 'remove'
+
+test_student.py:28: AttributeError
+_______________________________ test_s_remove_2 _______________________________
+
+    def test_s_remove_2():
+        l = LinkedList()
+        l.push(5)
+        l.push(6)
+    
+>       l.remove(19)
+E       AttributeError: 'LinkedList' object has no attribute 'remove'
+
+test_student.py:49: AttributeError
+________________________________ test_s_get_1 _________________________________
+
+    def test_s_get_1():
+        l = LinkedList()
+        l.push(10)
+        l.push(11)
+>       l.push(12)
+
+test_student.py:58: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a03.LinkedList object at 0x0000022CF8594128>, val = 12
+
+    def push(self , val):
+        new_node = Node(val)
+    
+        if self.head == None:
+            self.head = new_node
+            return
+    
+        last = self.head
+        while last.next is not None:
+>           temp = temp.next
+E           UnboundLocalError: local variable 'temp' referenced before assignment
+
+a03.py:24: UnboundLocalError
+________________________________ test_s_get_2 _________________________________
+
+    def test_s_get_2():
+        l = LinkedList()
+        l.push(10)
+        l.push(11)
+>       l.push(12)
+
+test_student.py:66: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a03.LinkedList object at 0x0000022CF8677CF8>, val = 12
+
+    def push(self , val):
+        new_node = Node(val)
+    
+        if self.head == None:
+            self.head = new_node
+            return
+    
+        last = self.head
+        while last.next is not None:
+>           temp = temp.next
+E           UnboundLocalError: local variable 'temp' referenced before assignment
+
+a03.py:24: UnboundLocalError
+________________________________ test_s_get_3 _________________________________
+
+    def test_s_get_3():
+        l = LinkedList()
+        l.push(10)
+        l.push(11)
+>       l.push(12)
+
+test_student.py:74: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a03.LinkedList object at 0x0000022CF8656668>, val = 12
+
+    def push(self , val):
+        new_node = Node(val)
+    
+        if self.head == None:
+            self.head = new_node
+            return
+    
+        last = self.head
+        while last.next is not None:
+>           temp = temp.next
+E           UnboundLocalError: local variable 'temp' referenced before assignment
+
+a03.py:24: UnboundLocalError
+===================== 5 failed, 3 passed in 0.17 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.10.1, py-1.5.3, pluggy-0.12.0
+rootdir: C:\Users\Saad Malik\Desktop\ass3, inifile:
+plugins: arraydiff-0.2, doctestplus-0.1.3, openfiles-0.3.0, remotedata-0.2.1, timeout-1.3.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 8 items
+
+test_student.py ...FFFFF                                                 [100%]
+
+================================== FAILURES ===================================
+_______________________________ test_s_remove_1 _______________________________
+
+    def test_s_remove_1():
+        l = LinkedList()
+        l.push(5)
+        l.push(6)
+    
+>       l.remove(5)
+E       AttributeError: 'LinkedList' object has no attribute 'remove'
+
+test_student.py:28: AttributeError
+_______________________________ test_s_remove_2 _______________________________
+
+    def test_s_remove_2():
+        l = LinkedList()
+        l.push(5)
+        l.push(6)
+    
+>       l.remove(19)
+E       AttributeError: 'LinkedList' object has no attribute 'remove'
+
+test_student.py:49: AttributeError
+________________________________ test_s_get_1 _________________________________
+
+    def test_s_get_1():
+        l = LinkedList()
+        l.push(10)
+        l.push(11)
+        l.push(12)
+>       assert l.get(0) == 10
+E       AttributeError: 'LinkedList' object has no attribute 'get'
+
+test_student.py:59: AttributeError
+________________________________ test_s_get_2 _________________________________
+
+    def test_s_get_2():
+        l = LinkedList()
+        l.push(10)
+        l.push(11)
+        l.push(12)
+>       assert l.get(1) == 11
+E       AttributeError: 'LinkedList' object has no attribute 'get'
+
+test_student.py:67: AttributeError
+________________________________ test_s_get_3 _________________________________
+
+    def test_s_get_3():
+        l = LinkedList()
+        l.push(10)
+        l.push(11)
+        l.push(12)
+        l.pop()
+        try:
+>           l.get(2)
+E           AttributeError: 'LinkedList' object has no attribute 'get'
+
+test_student.py:77: AttributeError
+===================== 5 failed, 3 passed in 0.29 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.10.1, py-1.5.3, pluggy-0.12.0
+rootdir: C:\Users\Saad Malik\Desktop\ass3, inifile:
+plugins: arraydiff-0.2, doctestplus-0.1.3, openfiles-0.3.0, remotedata-0.2.1, timeout-1.3.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 8 items
+
+test_student.py ...FFFFF                                                 [100%]
+
+================================== FAILURES ===================================
+_______________________________ test_s_remove_1 _______________________________
+
+    def test_s_remove_1():
+        l = LinkedList()
+        l.push(5)
+        l.push(6)
+    
+>       l.remove(5)
+E       AttributeError: 'LinkedList' object has no attribute 'remove'
+
+test_student.py:28: AttributeError
+_______________________________ test_s_remove_2 _______________________________
+
+    def test_s_remove_2():
+        l = LinkedList()
+        l.push(5)
+        l.push(6)
+    
+>       l.remove(19)
+E       AttributeError: 'LinkedList' object has no attribute 'remove'
+
+test_student.py:49: AttributeError
+________________________________ test_s_get_1 _________________________________
+
+    def test_s_get_1():
+        l = LinkedList()
+        l.push(10)
+        l.push(11)
+        l.push(12)
+>       assert l.get(0) == 10
+E       AttributeError: 'LinkedList' object has no attribute 'get'
+
+test_student.py:59: AttributeError
+________________________________ test_s_get_2 _________________________________
+
+    def test_s_get_2():
+        l = LinkedList()
+        l.push(10)
+        l.push(11)
+        l.push(12)
+>       assert l.get(1) == 11
+E       AttributeError: 'LinkedList' object has no attribute 'get'
+
+test_student.py:67: AttributeError
+________________________________ test_s_get_3 _________________________________
+
+    def test_s_get_3():
+        l = LinkedList()
+        l.push(10)
+        l.push(11)
+        l.push(12)
+        l.pop()
+        try:
+>           l.get(2)
+E           AttributeError: 'LinkedList' object has no attribute 'get'
+
+test_student.py:77: AttributeError
+===================== 5 failed, 3 passed in 0.22 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.10.1, py-1.5.3, pluggy-0.12.0
+rootdir: C:\Users\Saad Malik\Desktop\ass3, inifile:
+plugins: arraydiff-0.2, doctestplus-0.1.3, openfiles-0.3.0, remotedata-0.2.1, timeout-1.3.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 8 items
+
+test_student.py ...FFFFF                                                 [100%]
+
+================================== FAILURES ===================================
+_______________________________ test_s_remove_1 _______________________________
+
+    def test_s_remove_1():
+        l = LinkedList()
+        l.push(5)
+        l.push(6)
+    
+>       l.remove(5)
+E       AttributeError: 'LinkedList' object has no attribute 'remove'
+
+test_student.py:28: AttributeError
+_______________________________ test_s_remove_2 _______________________________
+
+    def test_s_remove_2():
+        l = LinkedList()
+        l.push(5)
+        l.push(6)
+    
+>       l.remove(19)
+E       AttributeError: 'LinkedList' object has no attribute 'remove'
+
+test_student.py:49: AttributeError
+________________________________ test_s_get_1 _________________________________
+
+    def test_s_get_1():
+        l = LinkedList()
+        l.push(10)
+        l.push(11)
+        l.push(12)
+>       assert l.get(0) == 10
+E       AttributeError: 'LinkedList' object has no attribute 'get'
+
+test_student.py:59: AttributeError
+________________________________ test_s_get_2 _________________________________
+
+    def test_s_get_2():
+        l = LinkedList()
+        l.push(10)
+        l.push(11)
+        l.push(12)
+>       assert l.get(1) == 11
+E       AttributeError: 'LinkedList' object has no attribute 'get'
+
+test_student.py:67: AttributeError
+________________________________ test_s_get_3 _________________________________
+
+    def test_s_get_3():
+        l = LinkedList()
+        l.push(10)
+        l.push(11)
+        l.push(12)
+        l.pop()
+        try:
+>           l.get(2)
+E           AttributeError: 'LinkedList' object has no attribute 'get'
+
+test_student.py:77: AttributeError
+===================== 5 failed, 3 passed in 0.17 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.10.1, py-1.5.3, pluggy-0.12.0
+rootdir: C:\Users\Saad Malik\Desktop\ass3, inifile:
+plugins: arraydiff-0.2, doctestplus-0.1.3, openfiles-0.3.0, remotedata-0.2.1, timeout-1.3.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 8 items
+
+test_student.py ....FFFF                                                 [100%]
+
+================================== FAILURES ===================================
+_______________________________ test_s_remove_2 _______________________________
+
+    def test_s_remove_2():
+        l = LinkedList()
+        l.push(5)
+        l.push(6)
+    
+        l.remove(19)
+        m = '[5, 6]'
+>       assert str(l).strip() == m
+E       AssertionError: assert '[5 , 6]' == '[5, 6]'
+E         - [5 , 6]
+E         ?   -
+E         + [5, 6]
+
+test_student.py:51: AssertionError
+________________________________ test_s_get_1 _________________________________
+
+    def test_s_get_1():
+        l = LinkedList()
+        l.push(10)
+        l.push(11)
+        l.push(12)
+>       assert l.get(0) == 10
+E       AttributeError: 'LinkedList' object has no attribute 'get'
+
+test_student.py:59: AttributeError
+________________________________ test_s_get_2 _________________________________
+
+    def test_s_get_2():
+        l = LinkedList()
+        l.push(10)
+        l.push(11)
+        l.push(12)
+>       assert l.get(1) == 11
+E       AttributeError: 'LinkedList' object has no attribute 'get'
+
+test_student.py:67: AttributeError
+________________________________ test_s_get_3 _________________________________
+
+    def test_s_get_3():
+        l = LinkedList()
+        l.push(10)
+        l.push(11)
+        l.push(12)
+        l.pop()
+        try:
+>           l.get(2)
+E           AttributeError: 'LinkedList' object has no attribute 'get'
+
+test_student.py:77: AttributeError
+===================== 4 failed, 4 passed in 0.23 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.10.1, py-1.5.3, pluggy-0.12.0
+rootdir: C:\Users\Saad Malik\Desktop\ass3, inifile:
+plugins: arraydiff-0.2, doctestplus-0.1.3, openfiles-0.3.0, remotedata-0.2.1, timeout-1.3.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 8 items
+
+test_student.py ....FFFF                                                 [100%]
+
+================================== FAILURES ===================================
+_______________________________ test_s_remove_2 _______________________________
+
+    def test_s_remove_2():
+        l = LinkedList()
+        l.push(5)
+        l.push(6)
+    
+        l.remove(19)
+        m = '[5, 6]'
+>       assert str(l).strip() == m
+E       AssertionError: assert '[5 , 6]' == '[5, 6]'
+E         - [5 , 6]
+E         ?   -
+E         + [5, 6]
+
+test_student.py:51: AssertionError
+________________________________ test_s_get_1 _________________________________
+
+    def test_s_get_1():
+        l = LinkedList()
+        l.push(10)
+        l.push(11)
+        l.push(12)
+>       assert l.get(0) == 10
+
+test_student.py:59: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a03.LinkedList object at 0x00000250A8A06828>, index = 0
+
+    def get(self , index):
+        temp = self.head
+        counter = 0
+>       if index > self.length():
+E       AttributeError: 'LinkedList' object has no attribute 'length'
+
+a03.py:87: AttributeError
+________________________________ test_s_get_2 _________________________________
+
+    def test_s_get_2():
+        l = LinkedList()
+        l.push(10)
+        l.push(11)
+        l.push(12)
+>       assert l.get(1) == 11
+
+test_student.py:67: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a03.LinkedList object at 0x00000250A8A5E278>, index = 1
+
+    def get(self , index):
+        temp = self.head
+        counter = 0
+>       if index > self.length():
+E       AttributeError: 'LinkedList' object has no attribute 'length'
+
+a03.py:87: AttributeError
+________________________________ test_s_get_3 _________________________________
+
+    def test_s_get_3():
+        l = LinkedList()
+        l.push(10)
+        l.push(11)
+        l.push(12)
+        l.pop()
+        try:
+>           l.get(2)
+
+test_student.py:77: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a03.LinkedList object at 0x00000250A8A597B8>, index = 2
+
+    def get(self , index):
+        temp = self.head
+        counter = 0
+>       if index > self.length():
+E       AttributeError: 'LinkedList' object has no attribute 'length'
+
+a03.py:87: AttributeError
+===================== 4 failed, 4 passed in 0.17 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.10.1, py-1.5.3, pluggy-0.12.0
+rootdir: C:\Users\Saad Malik\Desktop\ass3, inifile:
+plugins: arraydiff-0.2, doctestplus-0.1.3, openfiles-0.3.0, remotedata-0.2.1, timeout-1.3.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 8 items
+
+test_student.py ....FFFF                                                 [100%]
+
+================================== FAILURES ===================================
+_______________________________ test_s_remove_2 _______________________________
+
+    def test_s_remove_2():
+        l = LinkedList()
+        l.push(5)
+        l.push(6)
+    
+        l.remove(19)
+        m = '[5, 6]'
+>       assert str(l).strip() == m
+E       AssertionError: assert '[5 , 6]' == '[5, 6]'
+E         - [5 , 6]
+E         ?   -
+E         + [5, 6]
+
+test_student.py:51: AssertionError
+________________________________ test_s_get_1 _________________________________
+
+    def test_s_get_1():
+        l = LinkedList()
+        l.push(10)
+        l.push(11)
+        l.push(12)
+>       assert l.get(0) == 10
+
+test_student.py:59: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a03.LinkedList object at 0x0000020189027898>, index = 0
+
+    def get(self , index):
+        temp = self.head
+        counter = 0
+>       if index > self.length():
+E       AttributeError: 'LinkedList' object has no attribute 'length'
+
+a03.py:87: AttributeError
+________________________________ test_s_get_2 _________________________________
+
+    def test_s_get_2():
+        l = LinkedList()
+        l.push(10)
+        l.push(11)
+        l.push(12)
+>       assert l.get(1) == 11
+
+test_student.py:67: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a03.LinkedList object at 0x000002018907F358>, index = 1
+
+    def get(self , index):
+        temp = self.head
+        counter = 0
+>       if index > self.length():
+E       AttributeError: 'LinkedList' object has no attribute 'length'
+
+a03.py:87: AttributeError
+________________________________ test_s_get_3 _________________________________
+
+    def test_s_get_3():
+        l = LinkedList()
+        l.push(10)
+        l.push(11)
+        l.push(12)
+        l.pop()
+        try:
+>           l.get(2)
+
+test_student.py:77: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a03.LinkedList object at 0x000002018907A8D0>, index = 2
+
+    def get(self , index):
+        temp = self.head
+        counter = 0
+>       if index > self.length():
+E       AttributeError: 'LinkedList' object has no attribute 'length'
+
+a03.py:87: AttributeError
+===================== 4 failed, 4 passed in 0.22 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.10.1, py-1.5.3, pluggy-0.12.0
+rootdir: C:\Users\Saad Malik\Desktop\ass3, inifile:
+plugins: arraydiff-0.2, doctestplus-0.1.3, openfiles-0.3.0, remotedata-0.2.1, timeout-1.3.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 8 items
+
+test_student.py ....FFFF                                                 [100%]
+
+================================== FAILURES ===================================
+_______________________________ test_s_remove_2 _______________________________
+
+    def test_s_remove_2():
+        l = LinkedList()
+        l.push(5)
+        l.push(6)
+    
+        l.remove(19)
+        m = '[5, 6]'
+>       assert str(l).strip() == m
+E       AssertionError: assert '[5 , 6]' == '[5, 6]'
+E         - [5 , 6]
+E         ?   -
+E         + [5, 6]
+
+test_student.py:51: AssertionError
+________________________________ test_s_get_1 _________________________________
+
+    def test_s_get_1():
+        l = LinkedList()
+        l.push(10)
+        l.push(11)
+        l.push(12)
+>       assert l.get(0) == 10
+
+test_student.py:59: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a03.LinkedList object at 0x00000242B2F06828>, index = 0
+
+    def get(self , index):
+        temp = self.head
+        counter = 0
+>       if index > self.length():
+E       AttributeError: 'LinkedList' object has no attribute 'length'
+
+a03.py:87: AttributeError
+________________________________ test_s_get_2 _________________________________
+
+    def test_s_get_2():
+        l = LinkedList()
+        l.push(10)
+        l.push(11)
+        l.push(12)
+>       assert l.get(1) == 11
+
+test_student.py:67: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a03.LinkedList object at 0x00000242B2F5F320>, index = 1
+
+    def get(self , index):
+        temp = self.head
+        counter = 0
+>       if index > self.length():
+E       AttributeError: 'LinkedList' object has no attribute 'length'
+
+a03.py:87: AttributeError
+________________________________ test_s_get_3 _________________________________
+
+    def test_s_get_3():
+        l = LinkedList()
+        l.push(10)
+        l.push(11)
+        l.push(12)
+        l.pop()
+        try:
+>           l.get(2)
+
+test_student.py:77: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a03.LinkedList object at 0x00000242B2F59780>, index = 2
+
+    def get(self , index):
+        temp = self.head
+        counter = 0
+>       if index > self.length():
+E       AttributeError: 'LinkedList' object has no attribute 'length'
+
+a03.py:87: AttributeError
+===================== 4 failed, 4 passed in 0.23 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.10.1, py-1.5.3, pluggy-0.12.0
+rootdir: C:\Users\Saad Malik\Desktop\ass3, inifile:
+plugins: arraydiff-0.2, doctestplus-0.1.3, openfiles-0.3.0, remotedata-0.2.1, timeout-1.3.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 8 items
+
+test_student.py ....FF.F                                                 [100%]
+
+================================== FAILURES ===================================
+_______________________________ test_s_remove_2 _______________________________
+
+    def test_s_remove_2():
+        l = LinkedList()
+        l.push(5)
+        l.push(6)
+    
+        l.remove(19)
+        m = '[5, 6]'
+>       assert str(l).strip() == m
+E       AssertionError: assert '[5 , 6]' == '[5, 6]'
+E         - [5 , 6]
+E         ?   -
+E         + [5, 6]
+
+test_student.py:51: AssertionError
+________________________________ test_s_get_1 _________________________________
+
+    def test_s_get_1():
+        l = LinkedList()
+        l.push(10)
+        l.push(11)
+        l.push(12)
+>       assert l.get(0) == 10
+E       assert None == 10
+E        +  where None = <bound method LinkedList.get of <a03.LinkedList object at 0x00000143F0C467F0>>(0)
+E        +    where <bound method LinkedList.get of <a03.LinkedList object at 0x00000143F0C467F0>> = <a03.LinkedList object at 0x00000143F0C467F0>.get
+
+test_student.py:59: AssertionError
+________________________________ test_s_get_3 _________________________________
+
+    def test_s_get_3():
+        l = LinkedList()
+        l.push(10)
+        l.push(11)
+        l.push(12)
+        l.pop()
+        try:
+            l.get(2)
+>           raise AssertionError("IndexError not raised as expected!")
+E           AssertionError: IndexError not raised as expected!
+
+test_student.py:78: AssertionError
+===================== 3 failed, 5 passed in 0.34 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.10.1, py-1.5.3, pluggy-0.12.0
+rootdir: C:\Users\Saad Malik\Desktop\ass3, inifile:
+plugins: arraydiff-0.2, doctestplus-0.1.3, openfiles-0.3.0, remotedata-0.2.1, timeout-1.3.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 8 items
+
+test_student.py ....FF.F                                                 [100%]
+
+================================== FAILURES ===================================
+_______________________________ test_s_remove_2 _______________________________
+
+    def test_s_remove_2():
+        l = LinkedList()
+        l.push(5)
+        l.push(6)
+    
+        l.remove(19)
+        m = '[5, 6]'
+>       assert str(l).strip() == m
+E       AssertionError: assert '[5 , 6]' == '[5, 6]'
+E         - [5 , 6]
+E         ?   -
+E         + [5, 6]
+
+test_student.py:51: AssertionError
+________________________________ test_s_get_1 _________________________________
+
+    def test_s_get_1():
+        l = LinkedList()
+        l.push(10)
+        l.push(11)
+        l.push(12)
+>       assert l.get(0) == 10
+E       assert None == 10
+E        +  where None = <bound method LinkedList.get of <a03.LinkedList object at 0x000001DBB4CE6898>>(0)
+E        +    where <bound method LinkedList.get of <a03.LinkedList object at 0x000001DBB4CE6898>> = <a03.LinkedList object at 0x000001DBB4CE6898>.get
+
+test_student.py:59: AssertionError
+________________________________ test_s_get_3 _________________________________
+
+    def test_s_get_3():
+        l = LinkedList()
+        l.push(10)
+        l.push(11)
+        l.push(12)
+        l.pop()
+        try:
+            l.get(2)
+>           raise AssertionError("IndexError not raised as expected!")
+E           AssertionError: IndexError not raised as expected!
+
+test_student.py:78: AssertionError
+===================== 3 failed, 5 passed in 0.22 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.10.1, py-1.5.3, pluggy-0.12.0
+rootdir: C:\Users\Saad Malik\Desktop\ass3, inifile:
+plugins: arraydiff-0.2, doctestplus-0.1.3, openfiles-0.3.0, remotedata-0.2.1, timeout-1.3.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 8 items
+
+test_student.py ....F..F                                                 [100%]
+
+================================== FAILURES ===================================
+_______________________________ test_s_remove_2 _______________________________
+
+    def test_s_remove_2():
+        l = LinkedList()
+        l.push(5)
+        l.push(6)
+    
+        l.remove(19)
+        m = '[5, 6]'
+>       assert str(l).strip() == m
+E       AssertionError: assert '[5 , 6]' == '[5, 6]'
+E         - [5 , 6]
+E         ?   -
+E         + [5, 6]
+
+test_student.py:51: AssertionError
+________________________________ test_s_get_3 _________________________________
+
+    def test_s_get_3():
+        l = LinkedList()
+        l.push(10)
+        l.push(11)
+        l.push(12)
+        l.pop()
+        try:
+            l.get(2)
+>           raise AssertionError("IndexError not raised as expected!")
+E           AssertionError: IndexError not raised as expected!
+
+test_student.py:78: AssertionError
+===================== 2 failed, 6 passed in 0.12 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.10.1, py-1.5.3, pluggy-0.12.0
+rootdir: C:\Users\Saad Malik\Desktop\ass3, inifile:
+plugins: arraydiff-0.2, doctestplus-0.1.3, openfiles-0.3.0, remotedata-0.2.1, timeout-1.3.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 8 items
+
+test_student.py ....F..F                                                 [100%]
+
+================================== FAILURES ===================================
+_______________________________ test_s_remove_2 _______________________________
+
+    def test_s_remove_2():
+        l = LinkedList()
+        l.push(5)
+        l.push(6)
+    
+        l.remove(19)
+        m = '[5, 6]'
+>       assert str(l).strip() == m
+E       AssertionError: assert '[5 , 6]' == '[5, 6]'
+E         - [5 , 6]
+E         ?   -
+E         + [5, 6]
+
+test_student.py:51: AssertionError
+________________________________ test_s_get_3 _________________________________
+
+    def test_s_get_3():
+        l = LinkedList()
+        l.push(10)
+        l.push(11)
+        l.push(12)
+        l.pop()
+        try:
+            l.get(2)
+>           raise AssertionError("IndexError not raised as expected!")
+E           AssertionError: IndexError not raised as expected!
+
+test_student.py:78: AssertionError
+===================== 2 failed, 6 passed in 0.12 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.10.1, py-1.5.3, pluggy-0.12.0
+rootdir: C:\Users\Saad Malik\Desktop\ass3, inifile:
+plugins: arraydiff-0.2, doctestplus-0.1.3, openfiles-0.3.0, remotedata-0.2.1, timeout-1.3.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 8 items
+
+test_student.py ....F.F.                                                 [100%]
+
+================================== FAILURES ===================================
+_______________________________ test_s_remove_2 _______________________________
+
+    def test_s_remove_2():
+        l = LinkedList()
+        l.push(5)
+        l.push(6)
+    
+        l.remove(19)
+        m = '[5, 6]'
+>       assert str(l).strip() == m
+E       AssertionError: assert '[5 , 6]' == '[5, 6]'
+E         - [5 , 6]
+E         ?   -
+E         + [5, 6]
+
+test_student.py:51: AssertionError
+________________________________ test_s_get_2 _________________________________
+
+    def test_s_get_2():
+        l = LinkedList()
+        l.push(10)
+        l.push(11)
+        l.push(12)
+>       assert l.get(1) == 11
+
+test_student.py:67: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <a03.LinkedList object at 0x000001E491FF6978>, index = 1
+
+    def get(self , index):
+        temp = self.head
+        counter = 0
+        if index > counter:
+>           raise IndexError("Index out of bound")
+E           IndexError: Index out of bound
+
+a03.py:88: IndexError
+===================== 2 failed, 6 passed in 0.11 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.10.1, py-1.5.3, pluggy-0.12.0
+rootdir: C:\Users\Saad Malik\Desktop\ass3, inifile:
+plugins: arraydiff-0.2, doctestplus-0.1.3, openfiles-0.3.0, remotedata-0.2.1, timeout-1.3.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 8 items
+
+test_student.py ....F..F                                                 [100%]
+
+================================== FAILURES ===================================
+_______________________________ test_s_remove_2 _______________________________
+
+    def test_s_remove_2():
+        l = LinkedList()
+        l.push(5)
+        l.push(6)
+    
+        l.remove(19)
+        m = '[5, 6]'
+>       assert str(l).strip() == m
+E       AssertionError: assert '[5 , 6]' == '[5, 6]'
+E         - [5 , 6]
+E         ?   -
+E         + [5, 6]
+
+test_student.py:51: AssertionError
+________________________________ test_s_get_3 _________________________________
+
+    def test_s_get_3():
+        l = LinkedList()
+        l.push(10)
+        l.push(11)
+        l.push(12)
+        l.pop()
+        try:
+            l.get(2)
+>           raise AssertionError("IndexError not raised as expected!")
+E           AssertionError: IndexError not raised as expected!
+
+test_student.py:78: AssertionError
+===================== 2 failed, 6 passed in 0.11 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.10.1, py-1.5.3, pluggy-0.12.0
+rootdir: C:\Users\Saad Malik\Desktop\ass3, inifile:
+plugins: arraydiff-0.2, doctestplus-0.1.3, openfiles-0.3.0, remotedata-0.2.1, timeout-1.3.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 8 items
+
+test_student.py ....F..F                                                 [100%]
+
+================================== FAILURES ===================================
+_______________________________ test_s_remove_2 _______________________________
+
+    def test_s_remove_2():
+        l = LinkedList()
+        l.push(5)
+        l.push(6)
+    
+        l.remove(19)
+        m = '[5, 6]'
+>       assert str(l).strip() == m
+E       AssertionError: assert '[5 , 6]' == '[5, 6]'
+E         - [5 , 6]
+E         ?   -
+E         + [5, 6]
+
+test_student.py:51: AssertionError
+________________________________ test_s_get_3 _________________________________
+
+    def test_s_get_3():
+        l = LinkedList()
+        l.push(10)
+        l.push(11)
+        l.push(12)
+        l.pop()
+        try:
+            l.get(2)
+>           raise AssertionError("IndexError not raised as expected!")
+E           AssertionError: IndexError not raised as expected!
+
+test_student.py:78: AssertionError
+===================== 2 failed, 6 passed in 0.18 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.10.1, py-1.5.3, pluggy-0.12.0
+rootdir: C:\Users\Saad Malik\Desktop\ass3, inifile:
+plugins: arraydiff-0.2, doctestplus-0.1.3, openfiles-0.3.0, remotedata-0.2.1, timeout-1.3.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 8 items
+
+test_student.py ....F..F                                                 [100%]
+
+================================== FAILURES ===================================
+_______________________________ test_s_remove_2 _______________________________
+
+    def test_s_remove_2():
+        l = LinkedList()
+        l.push(5)
+        l.push(6)
+    
+        l.remove(19)
+        m = '[5, 6]'
+>       assert str(l).strip() == m
+E       AssertionError: assert '[5 , 6]' == '[5, 6]'
+E         - [5 , 6]
+E         ?   -
+E         + [5, 6]
+
+test_student.py:51: AssertionError
+________________________________ test_s_get_3 _________________________________
+
+    def test_s_get_3():
+        l = LinkedList()
+        l.push(10)
+        l.push(11)
+        l.push(12)
+        l.pop()
+        try:
+            l.get(2)
+>           raise AssertionError("IndexError not raised as expected!")
+E           AssertionError: IndexError not raised as expected!
+
+test_student.py:78: AssertionError
+===================== 2 failed, 6 passed in 0.33 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.10.1, py-1.5.3, pluggy-0.12.0
+rootdir: C:\Users\Saad Malik\Desktop\ass3, inifile:
+plugins: arraydiff-0.2, doctestplus-0.1.3, openfiles-0.3.0, remotedata-0.2.1, timeout-1.3.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 8 items
+
+test_student.py ....F..F                                                 [100%]
+
+================================== FAILURES ===================================
+_______________________________ test_s_remove_2 _______________________________
+
+    def test_s_remove_2():
+        l = LinkedList()
+        l.push(5)
+        l.push(6)
+    
+        l.remove(19)
+        m = '[5, 6]'
+>       assert str(l).strip() == m
+E       AssertionError: assert '[5 , 6]' == '[5, 6]'
+E         - [5 , 6]
+E         ?   -
+E         + [5, 6]
+
+test_student.py:51: AssertionError
+________________________________ test_s_get_3 _________________________________
+
+    def test_s_get_3():
+        l = LinkedList()
+        l.push(10)
+        l.push(11)
+        l.push(12)
+        l.pop()
+        try:
+            l.get(2)
+>           raise AssertionError("IndexError not raised as expected!")
+E           AssertionError: IndexError not raised as expected!
+
+test_student.py:78: AssertionError
+===================== 2 failed, 6 passed in 0.37 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.10.1, py-1.5.3, pluggy-0.12.0
+rootdir: C:\Users\Saad Malik\Desktop\ass3, inifile:
+plugins: arraydiff-0.2, doctestplus-0.1.3, openfiles-0.3.0, remotedata-0.2.1, timeout-1.3.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 8 items
+
+test_student.py ....F..F                                                 [100%]
+
+================================== FAILURES ===================================
+_______________________________ test_s_remove_2 _______________________________
+
+    def test_s_remove_2():
+        l = LinkedList()
+        l.push(5)
+        l.push(6)
+    
+        l.remove(19)
+        m = '[5, 6]'
+>       assert str(l).strip() == m
+E       AssertionError: assert '[5 , 6]' == '[5, 6]'
+E         - [5 , 6]
+E         ?   -
+E         + [5, 6]
+
+test_student.py:51: AssertionError
+________________________________ test_s_get_3 _________________________________
+
+    def test_s_get_3():
+        l = LinkedList()
+        l.push(10)
+        l.push(11)
+        l.push(12)
+        l.pop()
+        try:
+            l.get(2)
+>           raise AssertionError("IndexError not raised as expected!")
+E           AssertionError: IndexError not raised as expected!
+
+test_student.py:78: AssertionError
+===================== 2 failed, 6 passed in 0.15 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.10.1, py-1.5.3, pluggy-0.12.0
+rootdir: C:\Users\Saad Malik\Desktop\ass3, inifile:
+plugins: arraydiff-0.2, doctestplus-0.1.3, openfiles-0.3.0, remotedata-0.2.1, timeout-1.3.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 8 items
+
+test_student.py ....F..F                                                 [100%]
+
+================================== FAILURES ===================================
+_______________________________ test_s_remove_2 _______________________________
+
+    def test_s_remove_2():
+        l = LinkedList()
+        l.push(5)
+        l.push(6)
+    
+        l.remove(19)
+        m = '[5, 6]'
+>       assert str(l).strip() == m
+E       AssertionError: assert '[5 , 6]' == '[5, 6]'
+E         - [5 , 6]
+E         ?   -
+E         + [5, 6]
+
+test_student.py:51: AssertionError
+________________________________ test_s_get_3 _________________________________
+
+    def test_s_get_3():
+        l = LinkedList()
+        l.push(10)
+        l.push(11)
+        l.push(12)
+        l.pop()
+        try:
+            l.get(2)
+>           raise AssertionError("IndexError not raised as expected!")
+E           AssertionError: IndexError not raised as expected!
+
+test_student.py:78: AssertionError
+===================== 2 failed, 6 passed in 0.30 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.10.1, py-1.5.3, pluggy-0.12.0
+rootdir: C:\Users\Saad Malik\Desktop\ass3, inifile:
+plugins: arraydiff-0.2, doctestplus-0.1.3, openfiles-0.3.0, remotedata-0.2.1, timeout-1.3.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 8 items
+
+test_student.py .......F                                                 [100%]
+
+================================== FAILURES ===================================
+________________________________ test_s_get_3 _________________________________
+
+    def test_s_get_3():
+        l = LinkedList()
+        l.push(10)
+        l.push(11)
+        l.push(12)
+        l.pop()
+        try:
+            l.get(2)
+>           raise AssertionError("IndexError not raised as expected!")
+E           AssertionError: IndexError not raised as expected!
+
+test_student.py:78: AssertionError
+===================== 1 failed, 7 passed in 0.24 seconds ======================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.10.1, py-1.5.3, pluggy-0.12.0
+rootdir: C:\Users\Saad Malik\Desktop\ass3, inifile:
+plugins: arraydiff-0.2, doctestplus-0.1.3, openfiles-0.3.0, remotedata-0.2.1, timeout-1.3.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 8 items
+
+test_student.py ........                                                 [100%]
+
+========================== 8 passed in 0.29 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.10.1, py-1.5.3, pluggy-0.12.0
+rootdir: C:\Users\Saad Malik\Desktop\ass3, inifile:
+plugins: arraydiff-0.2, doctestplus-0.1.3, openfiles-0.3.0, remotedata-0.2.1, timeout-1.3.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 0 items / 1 errors
+
+=================================== ERRORS ====================================
+______________________ ERROR collecting test_student.py _______________________
+..\..\Anaconda3\lib\site-packages\_pytest\python.py:450: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+..\..\Anaconda3\lib\site-packages\py\_path\local.py:668: in pyimport
+    __import__(modname)
+<frozen importlib._bootstrap>:971: in _find_and_load
+    ???
+<frozen importlib._bootstrap>:955: in _find_and_load_unlocked
+    ???
+<frozen importlib._bootstrap>:656: in _load_unlocked
+    ???
+<frozen importlib._bootstrap>:626: in _load_backward_compatible
+    ???
+..\..\Anaconda3\lib\site-packages\_pytest\assertion\rewrite.py:294: in load_module
+    six.exec_(co, mod.__dict__)
+test_student.py:1: in <module>
+    from a03 import LinkedList
+E     File "C:\Users\Saad Malik\Desktop\ass3\a03.py", line 75
+E       .. if temp.val == val:
+E       ^
+E   SyntaxError: invalid syntax
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 errors during collection !!!!!!!!!!!!!!!!!!!
+=========================== 1 error in 0.63 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.10.1, py-1.5.3, pluggy-0.12.0
+rootdir: C:\Users\Saad Malik\Desktop\ass3, inifile:
+plugins: arraydiff-0.2, doctestplus-0.1.3, openfiles-0.3.0, remotedata-0.2.1, timeout-1.3.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 0 items / 1 errors
+
+=================================== ERRORS ====================================
+______________________ ERROR collecting test_student.py _______________________
+..\..\Anaconda3\lib\site-packages\_pytest\python.py:450: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+..\..\Anaconda3\lib\site-packages\py\_path\local.py:668: in pyimport
+    __import__(modname)
+<frozen importlib._bootstrap>:971: in _find_and_load
+    ???
+<frozen importlib._bootstrap>:955: in _find_and_load_unlocked
+    ???
+<frozen importlib._bootstrap>:656: in _load_unlocked
+    ???
+<frozen importlib._bootstrap>:626: in _load_backward_compatible
+    ???
+..\..\Anaconda3\lib\site-packages\_pytest\assertion\rewrite.py:294: in load_module
+    six.exec_(co, mod.__dict__)
+test_student.py:1: in <module>
+    from a03 import LinkedList
+E     File "C:\Users\Saad Malik\Desktop\ass3\a03.py", line 75
+E       .. if temp.val == val:
+E       ^
+E   SyntaxError: invalid syntax
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 errors during collection !!!!!!!!!!!!!!!!!!!
+=========================== 1 error in 0.21 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.10.1, py-1.5.3, pluggy-0.12.0
+rootdir: C:\Users\Saad Malik\Desktop\ass3, inifile:
+plugins: arraydiff-0.2, doctestplus-0.1.3, openfiles-0.3.0, remotedata-0.2.1, timeout-1.3.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 8 items
+
+test_student.py ........                                                 [100%]
+
+========================== 8 passed in 0.10 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.10.1, py-1.5.3, pluggy-0.12.0
+rootdir: C:\Users\Saad Malik\Desktop\ass3, inifile:
+plugins: arraydiff-0.2, doctestplus-0.1.3, openfiles-0.3.0, remotedata-0.2.1, timeout-1.3.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 8 items
+
+test_student.py ........                                                 [100%]
+
+========================== 8 passed in 0.08 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.10.1, py-1.5.3, pluggy-0.12.0
+rootdir: C:\Users\Saad Malik\Desktop\ass3, inifile:
+plugins: arraydiff-0.2, doctestplus-0.1.3, openfiles-0.3.0, remotedata-0.2.1, timeout-1.3.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 8 items
+
+test_student.py ........                                                 [100%]
+
+========================== 8 passed in 0.06 seconds ===========================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-3.10.1, py-1.5.3, pluggy-0.12.0
+rootdir: C:\Users\Saad Malik\Desktop\ass3, inifile:
+plugins: arraydiff-0.2, doctestplus-0.1.3, openfiles-0.3.0, remotedata-0.2.1, timeout-1.3.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 8 items
+
+test_student.py ........                                                 [100%]
+
+========================== 8 passed in 0.05 seconds ===========================

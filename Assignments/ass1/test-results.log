@@ -1,0 +1,66 @@
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-5.1.1, py-1.5.3, pluggy-0.12.0
+rootdir: C:\Users\Saad Malik\Desktop\ass
+plugins: arraydiff-0.2, doctestplus-0.1.3, openfiles-0.3.0, remotedata-0.2.1, timeout-1.3.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 2 items
+
+test_student.py EE                                                       [100%]
+
+=================================== ERRORS ====================================
+________________________ ERROR at setup of test_answer ________________________
+
+item = <Function test_answer>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+________________________ ERROR at setup of test_second ________________________
+
+item = <Function test_second>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+============================== 2 error in 1.20s ===============================
+============================= test session starts =============================
+platform win32 -- Python 3.6.5, pytest-5.1.1, py-1.5.3, pluggy-0.12.0
+rootdir: C:\Users\Saad Malik\Desktop\ass
+plugins: arraydiff-0.2, doctestplus-0.1.3, openfiles-0.3.0, remotedata-0.2.1, timeout-1.3.3
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 2 items
+
+test_student.py EE                                                       [100%]
+
+=================================== ERRORS ====================================
+________________________ ERROR at setup of test_answer ________________________
+
+item = <Function test_answer>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+________________________ ERROR at setup of test_second ________________________
+
+item = <Function test_second>
+
+    def pytest_runtest_setup(item):
+    
+>       remote_data = item.get_marker('remote_data')
+E       AttributeError: 'Function' object has no attribute 'get_marker'
+
+..\..\Anaconda3\lib\site-packages\pytest_remotedata\plugin.py:59: AttributeError
+============================== 2 error in 0.12s ===============================
